@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- POPUP RESULT -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>💙 Hasil Quiz</h2>
+    <p id="popupResult"></p>
+    <button onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+<body>
+
+<div class="container">
+  <h1>💙 Love Quiz 💙</h1>
+
+  <form id="quizForm">
+
+    <!-- Question 1 -->
+    <div class="card">
+      <h3>1. Apakah masih nyaman sama aku</h3>
+      <label><input type="radio" name="q1" value="a"> Tidak</label>
+      <label><input type="radio" name="q1" value="b"> Sedang</label>
+      <label><input type="radio" name="q1" value="c"> Masih banget</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="card">
+      <h3>2. Apa yang kamu mau sekarang</h3>
+      <label><input type="radio" name="q2" value="a"> Aku butuh space, tapi jangan pergi ya</label>
+      <label><input type="radio" name="q2" value="b"> Tinggalkan aku sendiri</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="card">
+      <h3>3. Apa yang kamu mau dari aku</h3>
+      <label><input type="radio" name="q3" value="a"> Aku mau kamu stay! tapi aku butuh space</label>
+      <label><input type="radio" name="q3" value="b"> Aku mau kamu pergi! hmph</label>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="card">
+      <h3>4. Do you still love me?</h3>
+      <label><input type="radio" name="q4" value="a"> No</label>
+      <label><input type="radio" name="q4" value="b"> Sedang</label>
+      <label><input type="radio" name="q4" value="c"> Love u so much, mwah</label>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="card">
+      <h3>5. Apakah aku annoying?</h3>
+      <label><input type="radio" name="q5" value="a"> Kadang annoying, tapi its ok</label>
+      <label><input type="radio" name="q5" value="b"> Pake banget wlee</label>
+      <label><input type="radio" name="q5" value="c"> Ngga kok</label>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="card">
+      <h3>6. Apakah kamu kesal padaku?</h3>
+      <label><input type="radio" name="q6" value="a"> Tidak kok, chill aja</label>
+      <label><input type="radio" name="q6" value="b"> Aku kesal banget</label>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="card">
+      <h3>7. Do you care bout me?</h3>
+      <label><input type="radio" name="q7" value="a"> Yes, I care bout u so much</label>
+      <label><input type="radio" name="q7" value="b"> Not really</label>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="card">
+      <h3>8. Seberapa besar sukamu padaku sekarang?</h3>
+      <label><input type="radio" name="q8" value="a"> Less 10%</label>
+      <label><input type="radio" name="q8" value="b"> 10-20%</label>
+      <label><input type="radio" name="q8" value="c"> 20-40%</label>
+      <label><input type="radio" name="q8" value="d"> 50-60%</label>
+      <label><input type="radio" name="q8" value="f"> 60-70%</label>
+      <label><input type="radio" name="q8" value="g"> 70-90%</label>
+      <label><input type="radio" name="q8" value="h"> 100%</label>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Selesai</button>
+
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
